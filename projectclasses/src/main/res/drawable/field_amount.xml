@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_marginStart="@dimen/margin_default"
+	android:layout_marginEnd="@dimen/margin_default">
+	<TableRow
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical" >
+
+		<TextView
+			android:textColor="@color/black"
+			android:background="@drawable/edittext_currency"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="€" />
+		<com.farrusco.projectclasses.widget.EditTextExt
+			android:theme="@style/EditText"
+			android:textColor="@color/black"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:inputType="number"
+			android:maxLength="6"
+			android:width="@dimen/normal_100sp"
+			android:maxWidth="@dimen/normal_100sp"
+			android:textAlignment="textEnd"
+			android:hint="0"
+			android:background="@drawable/edittext_absolute"
+			android:textColorHint="@color/black"
+			app:backgroundResource="@drawable/edittext_absolute"
+			app:validate="empty" />
+		<TextView
+			android:theme="@style/TextView"
+			android:background="@drawable/edittext_seperator"
+			android:text=","
+			android:textColor="@color/black"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+		<com.farrusco.projectclasses.widget.EditTextExt
+			android:theme="@style/EditText"
+			android:textColor="@color/black"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:inputType="number"
+			android:maxLength="2"
+			android:width="@dimen/normal_30sp"
+			android:maxWidth="@dimen/normal_30sp"
+			android:textAlignment="textStart"
+			android:hint="00"
+			android:background="@drawable/edittext_decimal"
+			app:backgroundResource="@drawable/edittext_decimal"
+			app:validate="empty"
+			android:textColorHint="@color/black" />
+		<com.farrusco.projectclasses.widget.EditTextMoney
+			android:textSize="@dimen/normal_1sp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:visibility="gone"
+			android:importantForAccessibility="no"
+			app:maxNumberOfDecimalDigits="2" />
+	</TableRow>
+</TableLayout>

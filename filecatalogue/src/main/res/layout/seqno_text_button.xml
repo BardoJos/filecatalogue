@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical" >
+	<com.farrusco.projectclasses.widget.EditTextExt
+		android:theme="@style/Project.EditTextStyle.Big"
+		android:background="@drawable/edittext_gradient"
+		android:textColor="@color/black"
+		android:text="1"
+		android:id="@+id/colSeqno"
+		android:layout_width="@dimen/normal_50sp"
+		android:maxLength="3"
+		android:layout_marginStart="@dimen/margin_default"
+		android:layout_marginEnd="@dimen/margin_default"
+		android:layout_gravity="center_vertical"
+		android:inputType="number"
+		android:importantForAccessibility="no"
+		tools:ignore="HardcodedText"
+		app:drawlines="false"/>
+	<com.farrusco.projectclasses.widget.EditTextExt
+		android:id="@+id/colTitle"
+		android:theme="@style/Project.EditTextStyle.Ultra"
+		android:layout_width="0sp"
+		android:layout_marginEnd="@dimen/margin_default"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="@dimen/margin_default"
+		app:autoScale="true"
+		android:background="@drawable/edittext_gradient" />
+	<include
+		layout="@layout/button_popupmenu"
+		android:layout_width="@dimen/normal_35sp"
+		android:layout_height="@dimen/normal_35sp"
+		android:layout_marginEnd="@dimen/margin_default"
+		android:layout_gravity="center_vertical" />
+</TableRow>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content">
+	<TextView
+		android:textColor="@color/black"
+		android:theme="@style/EditText"
+		android:background="@drawable/edittext_currency"
+		android:id="@+id/txtValutax"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="€"
+		tools:ignore="HardcodedText" />
+	<com.farrusco.projectclasses.widget.EditTextExt
+		android:theme="@style/EditText"
+		android:textColor="@color/black"
+		android:id="@+id/txtAmount1x"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:inputType="numberSigned"
+		android:maxLength="6"
+		android:width="@dimen/normal_100sp"
+		android:maxWidth="@dimen/normal_100sp"
+		android:textAlignment="textEnd"
+		android:hint="0"
+		android:background="@drawable/edittext_absolute"
+		android:textColorHint="@color/black"
+		app:backgroundResource="@drawable/edittext_absolute"
+		app:validate="empty"
+		tools:ignore="HardcodedText"
+		android:tag="@string/ignore"  />
+	<TextView
+		android:id="@+id/txtSeparatorx"
+		android:theme="@style/EditText"
+		android:background="@drawable/edittext_seperator"
+		android:text=","
+		android:textColor="@color/black"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		tools:ignore="HardcodedText" />
+	<com.farrusco.projectclasses.widget.EditTextExt
+		android:theme="@style/EditText"
+		android:textColor="@color/black"
+		android:id="@+id/txtAmount2x"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:inputType="number"
+		android:maxLength="2"
+		android:width="@dimen/normal_30sp"
+		android:maxWidth="@dimen/normal_30sp"
+		android:textAlignment="textStart"
+		android:hint="00"
+		android:background="@drawable/edittext_decimal"
+		app:backgroundResource="@drawable/edittext_decimal"
+		app:validate="empty"
+		android:textColorHint="@color/black"
+		tools:ignore="HardcodedText"
+		android:tag="@string/ignore"  />
+	<com.farrusco.projectclasses.widget.EditTextMoney
+		android:id="@+id/txtAmount0x"
+		android:theme="@style/EditText"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="@dimen/normal_1sp"
+		android:visibility="gone"
+		android:importantForAccessibility="no"
+		app:maxNumberOfDecimalDigits="2"
+		tools:ignore="SmallSp" />
+</TableRow>

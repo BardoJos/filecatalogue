@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/black"
+        android:fillViewport="true"
+        tools:ignore="UselessParent" >
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TableLayout
+                android:id="@+id/tblLayout2"
+                android:layout_width="fill_parent"
+                android:layout_marginStart="@dimen/margin_default"
+                android:layout_marginEnd="@dimen/margin_default"
+                android:stretchColumns="*"
+                android:padding="@dimen/normal_2sp"
+                android:layout_height="wrap_content">
+                <TableRow
+                    android:id="@+id/tblRow">
+                    <TextView
+                        android:id="@+id/colTypeId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_size_textview"
+                        android:text="@string/empty"
+                        android:height="@dimen/normal_24sp"/>
+                    <com.farrusco.projectclasses.widget.SwitchExt
+                        android:text="@string/empty"
+                        android:id="@+id/colSubTypeId"
+                        android:theme="@style/Switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:height="@dimen/normal_24sp"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_size_edittext"
+                        android:textStyle="bold"/>
+                </TableRow>
+            </TableLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

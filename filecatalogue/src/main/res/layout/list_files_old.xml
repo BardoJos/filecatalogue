@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:actionBarNavMode="standard">
+        <include
+            layout="@layout/toolbar_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TableLayout
+            android:id="@+id/tblLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="2"
+            tools:ignore="UselessParent">
+                <include
+                    layout="@layout/imagetext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"  />
+
+        </TableLayout>
+</LinearLayout>

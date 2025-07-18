@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/tblRow"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<com.farrusco.projectclasses.widget.ButtonExt
+		android:id="@+id/btnStartRestore"
+		android:theme="@style/Project.ButtonStyle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="@dimen/margin_default"
+		android:layout_marginEnd="@dimen/margin_default"
+		android:text="@string/restore" />
+
+	<com.farrusco.projectclasses.widget.TextViewExt
+		android:id="@+id/colDescription"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="@dimen/margin_default"
+		android:theme="@style/Project.TextViewStyle" />
+
+	<include
+		layout="@layout/button_popupmenu"
+		android:layout_width="@dimen/normal_48sp"
+		android:layout_height="@dimen/normal_48sp"
+		android:layout_marginEnd="@dimen/margin_default" />
+</TableRow>

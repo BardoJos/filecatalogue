@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical" >
+	<com.farrusco.projectclasses.widget.TextViewExt
+		android:theme="@style/Project.TextViewStyle"
+		android:layout_height="wrap_content"
+		android:id="@+id/colSeqno"
+		android:layout_width="@dimen/normal_50sp"
+		android:layout_marginStart="@dimen/margin_default"
+		android:layout_marginEnd="@dimen/margin_default"
+		android:layout_gravity="center_vertical"
+		android:importantForAccessibility="no"
+		tools:ignore="HardcodedText"
+		app:drawlines="false"/>
+	<com.farrusco.projectclasses.widget.EditTextExt
+		android:id="@+id/colTitle"
+		android:theme="@style/Project.EditTextStyle.Ultra"
+		android:layout_width="0sp"
+		android:layout_marginEnd="@dimen/margin_default"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="@dimen/margin_default"
+		app:autoScale="true"
+		android:background="@drawable/edittext_gradient" />
+</TableRow>

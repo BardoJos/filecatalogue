@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <com.farrusco.projectclasses.widget.TextViewExt
+        android:id="@+id/colId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_default"
+        android:layout_marginEnd="@dimen/margin_default"
+        android:gravity="start|center_vertical"
+        android:theme="@style/Project.TextViewStyle"/>
+
+    <com.farrusco.projectclasses.widget.TextViewExt
+        android:id="@+id/colDescription"
+        android:theme="@style/Project.TextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_default"
+        android:gravity="start|center_vertical"/>
+
+    <include
+        layout="@layout/button_popupmenu"
+        android:layout_width="@dimen/normal_48sp"
+        android:layout_height="@dimen/normal_48sp"
+        android:layout_marginEnd="@dimen/margin_default" />
+
+</TableRow>

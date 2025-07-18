@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <declare-styleable name="TabLayoutExt">
+    <attr name="xtlIndicatorAlwaysInCenter" format="boolean"/>
+    <attr name="xtlIndicatorWithoutPadding" format="boolean"/>
+    <attr name="xtlIndicatorInFront" format="boolean"/>
+    <attr name="xtlIndicatorInterpolation" format="enum">
+      <enum name="smart" value="0"/>
+      <enum name="linear" value="1"/>
+    </attr>
+    <attr name="xtlIndicatorGravity" format="enum">
+      <enum name="bottom" value="0"/>
+      <enum name="top" value="1"/>
+      <enum name="center" value="2"/>
+    </attr>
+    <attr name="xtlIndicatorColor" format="color"/>
+    <attr name="xtlIndicatorColors" format="reference"/>
+    <attr name="xtlIndicatorThickness" format="dimension"/>
+    <attr name="xtlIndicatorWidth" format="dimension">
+      <enum name="auto" value="-1"/>
+    </attr>
+    <attr name="xtlIndicatorCornerRadius" format="dimension"/>
+    <attr name="xtlOverlineColor" format="color"/>
+    <attr name="xtlOverlineThickness" format="dimension"/>
+    <attr name="xtlUnderlineColor" format="color"/>
+    <attr name="xtlUnderlineThickness" format="dimension"/>
+    <attr name="xtlDividerColor" format="color"/>
+    <attr name="xtlDividerColors" format="reference"/>
+    <attr name="xtlDividerThickness" format="dimension"/>
+    <attr name="xtlDefaultTabBackground" format="reference"/>
+    <attr name="xtlDefaultTabTextAllCaps" format="boolean"/>
+    <attr name="xtlDefaultTabTextColor" format="color|reference"/>
+    <attr name="xtlDefaultTabTextSize" format="dimension"/>
+    <attr name="xtlDefaultTabTextHorizontalPadding" format="dimension"/>
+    <attr name="xtlDefaultTabTextMinWidth" format="dimension"/>
+    <attr name="xtlCustomTabTextLayoutId" format="reference"/>
+    <attr name="xtlCustomTabTextViewId" format="reference"/>
+    <attr name="xtlDistributeEvenly" format="boolean"/>
+    <attr name="xtlClickable" format="boolean"/>
+    <attr name="xtlTitleAllCaps" format="boolean"/>
+    <attr name="xtlTitleOffset" format="dimension">
+      <enum name="auto_center" value="-1"/>
+    </attr>
+    <attr name="xtlDrawDecorationAfterTab" format="boolean"/>
+    <attr name="xtlTabMode" format="enum">
+      <enum name="auto" value="0"/>
+      <enum name="fixed" value="1"/>
+      <enum name="scrollable" value="2"/>
+    </attr>
+  </declare-styleable>
+</resources>

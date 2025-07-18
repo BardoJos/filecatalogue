@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/viewMain0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/graph"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="0">
+            <TableRow tools:ignore="UselessParent">
+                <com.farrusco.projectclasses.widget.ButtonExt
+                    android:id="@+id/btnPhoto"
+                    android:theme="@style/Project.ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/normal_40sp"
+                    android:text="@string/settings_choose_file"
+                    android:gravity="center_vertical"  />
+                <com.farrusco.projectclasses.widget.ButtonExt
+                    android:id="@+id/btnCopyPrev"
+                    android:theme="@style/Project.ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/margin_default"
+                    android:scaleType="center"
+                    android:text="@string/copy_from_file"
+                    android:textAlignment="center"
+                    android:contentDescription="@string/copycategory" />
+                <com.farrusco.projectclasses.widget.EditTextExt
+                    android:id="@+id/txtSeqno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:width="@dimen/normal_50sp"
+                    android:background="@drawable/edittext_gradient"
+                    android:gravity="center_vertical"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:theme="@style/EditText"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+                <com.farrusco.projectclasses.widget.ButtonExt
+                    android:id="@+id/btnRotateLeft"
+                    android:gravity="center_vertical"
+                    android:layout_width="@dimen/normal_40sp"
+                    android:layout_height="@dimen/normal_40sp"
+                    android:background="@drawable/button_rotateleft"
+                    android:layout_marginStart="@dimen/margin_default"
+                    android:scaleType="fitXY"
+                    android:contentDescription="@string/rotateleft"/>
+                <com.farrusco.projectclasses.widget.ButtonExt
+                    android:id="@+id/btnRotateRight"
+                    android:layout_width="@dimen/normal_40sp"
+                    android:layout_height="@dimen/normal_40sp"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="@dimen/margin_default"
+                    android:layout_marginEnd="@dimen/margin_default"
+                    android:background="@drawable/button_rotateright"
+                    android:scaleType="fitXY"
+                    android:contentDescription="@string/rotateright"/>
+                <com.farrusco.projectclasses.widget.ButtonExt
+                    android:id="@+id/btnPlay"
+                    android:layout_width="@dimen/normal_40sp"
+                    android:layout_height="@dimen/normal_40sp"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="@dimen/margin_default"
+                    android:layout_marginEnd="@dimen/margin_default"
+                    android:scaleType="fitXY"
+                    android:background="@android:drawable/ic_media_play"
+                    android:contentDescription="@string/common_google_play_services_enable_button"/>
+            </TableRow>
+        </TableLayout>
+
+        <ScrollView
+            android:id="@+id/textMain"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:id="@+id/textView"
+                android:theme="@style/TextView"
+                android:textIsSelectable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/groupMedia"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:background="@color/Black" >
+
+ <!--           <com.farrusco.projectclasses.graphics.ImageViewGesture
+                android:id="@+id/imageView"
+                android:adjustViewBounds="true"
+                android:layout_height="fill_parent"
+                android:layout_width="match_parent"
+                android:src="@drawable/logo"
+                android:scaleType="fitCenter"/>  -->
+
+            <com.farrusco.projectclasses.widget.TouchImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/normal_10sp"
+                android:contentDescription="@string/description"
+                android:src="@drawable/logo" />
+
+            <com.farrusco.projectclasses.widget.VideoViewExt
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/normal_10sp" />
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/pdfMain"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.farrusco.projectclasses.widget.pdfviewer.PdfRendererView
+                android:id="@+id/pdfView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:pdfView_divider="@drawable/divider"
+                app:pdfView_engine="internal"
+                app:pdfView_showDivider="false" />
+
+            <ProgressBar
+                android:id="@+id/pdfProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@android:style/Widget.ProgressBar.Large"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".basis.DetailFileTab"
+    android:id="@+id/viewMain"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TableLayout
+        android:id="@+id/normalScroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_1sp"
+        android:stretchColumns="2" >
+        <TableRow tools:ignore="UselessParent">
+
+            <com.farrusco.projectclasses.widget.ButtonExt
+                android:id="@+id/btnPrevious"
+                android:theme="@style/Project.ButtonStyle.Large"
+                android:layout_width="@dimen/normal_90sp"
+                android:layout_height="@dimen/normal_48sp"
+                android:layout_marginEnd="@dimen/normal_1sp"
+                android:text="@string/pagePrevious"
+                android:textAlignment="center" />
+            <com.farrusco.projectclasses.widget.ButtonExt
+                android:id="@+id/btnFirst"
+                android:theme="@style/Project.ButtonStyle.Large"
+                android:layout_width="@dimen/normal_60sp"
+                android:layout_height="@dimen/normal_48sp"
+                android:layout_marginEnd="@dimen/normal_1sp"
+                android:text="@string/pageFirst"
+                android:textAlignment="center"/>
+
+            <com.farrusco.projectclasses.widget.TextViewExt
+                android:id="@+id/txtCodeTop"
+                android:layout_width="match_parent"
+                android:text="@string/lbldots"
+                android:textAlignment="center"
+                android:theme="@style/TextView" />
+
+            <com.farrusco.projectclasses.widget.ButtonExt
+                android:id="@+id/btnLast"
+                android:theme="@style/Project.ButtonStyle.Large"
+                android:layout_width="@dimen/normal_60sp"
+                android:layout_height="@dimen/normal_48sp"
+                android:layout_marginStart="@dimen/normal_1sp"
+                android:text="@string/pageLast"
+                android:textAlignment="center"/>
+            <com.farrusco.projectclasses.widget.ButtonExt
+                android:id="@+id/btnNext"
+                android:theme="@style/Project.ButtonStyle.Large"
+                android:layout_width="@dimen/normal_90sp"
+                android:layout_height="@dimen/normal_48sp"
+                android:layout_marginStart="@dimen/normal_1sp"
+                android:text="@string/pageNext"
+                android:textAlignment="center" />
+        </TableRow>
+    </TableLayout>
+
+    <com.farrusco.projectclasses.widget.TextViewExt
+        android:id="@+id/txtTopTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lbldots"
+        android:textAlignment="center"
+        android:theme="@style/TextView"/>
+
+    <!-- files -->
+<!--        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout_files"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />-->
+        <include
+            layout="@layout/tablayoutextoff"
+            android:id="@+id/tab_layout_files"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_48sp"/>
+
+    <!-- file/Details/category -->
+        <include
+            layout="@layout/tablayoutext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_48sp"/>
+
+        <include layout="@layout/line_separator_2sp"/>
+
+    <!-- files -->
+<!--        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/tabs_viewpager_files"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            android:layout_weight="1" />-->
+
+    <!-- frag 0,1,2 -->
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/tabs_viewpager_frags"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>

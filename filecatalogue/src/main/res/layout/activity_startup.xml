@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    android:orientation="vertical"
+    android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        tools:ignore="UselessParent">
+        <TableRow android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/app_name1"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/normal_90sp"
+                android:theme="@style/TextView"
+                app:fontFamily="cursive"/>
+        </TableRow>
+        <TableRow android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/app_name2"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/normal_90sp"
+                android:theme="@style/TextView"
+                app:fontFamily="cursive"/>
+        </TableRow>
+        <TableRow
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/normal_30sp">
+            <ProgressBar
+                style="@android:style/Widget.ProgressBar.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

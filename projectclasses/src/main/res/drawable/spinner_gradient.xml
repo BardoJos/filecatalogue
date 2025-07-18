@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <item>
+    <layer-list>
+    <item>
+      <shape>
+        <gradient
+            android:angle="90"
+            android:endColor="@color/white"
+            android:startColor="#E8EBEF"
+            android:type="linear" />
+        <stroke
+            android:width="@dimen/normal_1sp"
+            android:color="@color/solid_blue" />
+        <corners
+            android:radius="@dimen/normal_4sp" />
+        <padding
+            android:bottom="@dimen/margin_default"
+            android:left="@dimen/margin_default"
+            android:right="@dimen/margin_default"
+            android:top="@dimen/margin_default" />
+      </shape>
+    </item>
+    <item
+        android:width="@dimen/normal_30sp"
+        android:height="@dimen/normal_30sp"
+        android:gravity="right|center_vertical">
+      <bitmap
+        android:gravity="fill_vertical|fill_horizontal"
+        android:src="@drawable/dropdown" />
+    </item>
+  </layer-list>
+  </item>
+
+</selector>

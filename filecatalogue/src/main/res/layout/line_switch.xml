@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:paddingBottom="@dimen/normal_4sp">
+	<com.farrusco.projectclasses.widget.SwitchExt
+		android:text="@string/empty"
+		android:id="@+id/colSubTypeId"
+		android:theme="@style/Project.EditTextStyle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="@color/white"
+		android:textStyle="bold"
+		android:textSize="27sp"
+		android:layout_span="2"
+		android:background="@drawable/cell_underline"
+		android:layout_weight="1"/>
+</TableRow>

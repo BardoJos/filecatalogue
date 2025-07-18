@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/viewMain0"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_default"
+            android:layout_marginEnd="@dimen/margin_default"
+            android:layout_marginBottom="@dimen/margin_default"
+            android:stretchColumns="1" >
+
+            <TableRow>
+
+                <com.farrusco.projectclasses.widget.TextViewExt
+                    android:theme="@style/Project.TextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lblorderno" />
+
+                <com.farrusco.projectclasses.widget.TextViewExt
+                    android:id="@+id/txtId"
+                    android:textAlignment="textStart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/Project.TextViewStyle"/>
+            </TableRow>
+
+            <TableRow>
+
+                <com.farrusco.projectclasses.widget.TextViewExt
+                    android:theme="@style/Project.TextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/lblname" />
+
+                <com.farrusco.projectclasses.widget.EditTextExt
+                    android:id="@+id/txtNaam"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0sp"
+                    android:theme="@style/Project.EditTextStyle.Ultra"
+                    android:layout_marginEnd="@dimen/margin_default"
+                    app:validate="empty"
+                    tools:ignore="SpeakableTextPresentCheck"  />
+            </TableRow>
+
+
+            <TableRow >
+
+                <com.farrusco.projectclasses.widget.TextViewExt
+                    android:theme="@style/Project.TextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_default"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/lbladdress" />
+
+                <com.farrusco.projectclasses.widget.EditTextExt
+                    android:id="@+id/txtAddress"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_default"
+                    android:theme="@style/Project.EditTextStyle.Ultra"
+                    app:validate="empty"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </TableRow>
+
+            <TableRow >
+
+                <com.farrusco.projectclasses.widget.TextViewExt
+                    android:theme="@style/Project.TextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_default"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/lblemail" />
+
+                <com.farrusco.projectclasses.widget.EditTextExt
+                    android:id="@+id/txtEMail"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_default"
+                    android:theme="@style/Project.EditTextStyle.Ultra"
+                    app:validate="empty"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </TableRow>
+
+            <TableRow>
+                <com.farrusco.projectclasses.widget.TextViewExt
+                    android:theme="@style/Project.TextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lblorderdate" />
+
+                <com.farrusco.projectclasses.widget.TextViewExt
+                    android:id="@+id/txtOrderDatum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_default"
+                    android:background="@drawable/edittext_gradient"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_textview"
+                    app:textContextMenu="true"
+                    app:textformat="dateshort"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </TableRow>
+
+            <TableRow>
+                <com.farrusco.projectclasses.widget.TextViewExt
+                    android:theme="@style/Project.TextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbldeliverdate" />
+
+                <com.farrusco.projectclasses.widget.TextViewExt
+                    android:id="@+id/txtAfleverDatum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_default"
+                    android:background="@drawable/edittext_gradient"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_textview"
+                    app:textContextMenu="true"
+                    app:textformat="dateshort"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            </TableRow>
+
+            <TableRow android:layout_marginBottom="10sp">
+                <com.farrusco.projectclasses.widget.TextViewExt
+                    android:theme="@style/Project.TextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/lblremarks"
+                    android:labelFor="@id/txtOpmerkingen"/>
+
+                <com.farrusco.projectclasses.widget.EditTextExt
+                    android:id="@+id/txtOpmerkingen"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0sp"
+                    android:theme="@style/Project.EditTextStyle.Ultra"
+                    android:layout_marginEnd="@dimen/margin_default"
+                    app:validate="empty" />
+            </TableRow>
+
+            <TableRow>
+
+                <com.farrusco.projectclasses.widget.TextViewExt
+                    android:theme="@style/Project.TextViewStyle"
+                    android:id="@+id/lblDiscount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbldiscount" />
+
+                <include
+                    android:id="@+id/hdrDiscount"
+                    layout="@layout/field_amountrow" />
+
+            </TableRow>
+
+            <TableRow>
+                <com.farrusco.projectclasses.widget.TextViewExt
+                    android:theme="@style/Project.TextViewStyle"
+                    android:id="@+id/lblBedrag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbltotal" />
+
+                <include
+                    android:id="@+id/hdrBedrag"
+                    layout="@layout/field_amount_vw" />
+            </TableRow>
+        </TableLayout>
+
+    </ScrollView>
+
+</FrameLayout>

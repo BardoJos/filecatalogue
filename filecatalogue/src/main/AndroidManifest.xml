@@ -1,0 +1,312 @@
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+<!--    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>-->
+    <uses-feature android:name="android.hardware.camera.any"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:icon="@drawable/filecatalogue"
+        android:label="@string/app_name3"
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        android:roundIcon="@drawable/filecatalogue"
+        android:theme="@style/Theme.Project.Base"
+        android:requestLegacyExternalStorage="true"
+        android:hardwareAccelerated="true">
+        <!--    android:enableOnBackInvokedCallback="true"
+            android:dataExtractionRules="@xml/data_extraction_rules"-->
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/AD_MOB_APP_ID"/>
+        <meta-data
+            android:name="com.google.mlkit.vision.DEPENDENCIES"
+            android:value="barcode" />
+
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+        
+        <uses-library
+            android:name="com.SOLVER.will.never.exist"
+            android:required="false" />
+
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true"
+            android:label="${appLabel}"
+            android:configChanges="screenSize|orientation|screenLayout|navigation"
+            android:theme="@style/Theme.Project.Base">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".main.ApiMainPrepare"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.Project.Base"
+            android:exported="false"/>
+
+        <activity android:name=".main.ApiMainMenu"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.Project.Base"
+            android:exported="false"/>
+
+        <!-- ************************************* -->
+        <!-- base -->
+        <!-- ************************************* -->
+
+        <activity
+            android:name=".basis.ListCategory"
+            android:label="@string/activity_list_category"
+            android:theme="@style/Theme.Project.Base"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.farrusco.filecatalogue.base" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".basis.ListFileDirs"
+            android:label="@string/activity_list_filedirs"
+            android:theme="@style/Theme.Project.Base"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.farrusco.filecatalogue.base" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".basis.RefreshGPS"
+            android:label="@string/activity_refreshgps"
+            android:theme="@style/Theme.Project.Base"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.farrusco.filecatalogue.base" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".basis.RefreshFace"
+            android:label="@string/activity_refreshface"
+            android:theme="@style/Theme.Project.Base"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.farrusco.filecatalogue.base" />
+            </intent-filter>
+        </activity>
+
+        <!-- ************************************* -->
+        <!-- project -->
+        <!-- ************************************* -->
+
+        <activity
+            android:name=".order.ListOrders"
+            android:theme="@style/Theme.Project.Base"
+            android:label="@string/activity_list_order"
+            tools:ignore="Instantiatable"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.farrusco.filecatalogue.project" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".common.SearchFiles"
+            android:theme="@style/Theme.Project.Base"
+            android:label="@string/activity_search_files"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.farrusco.filecatalogue.project" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".basis.TranslateText"
+            android:label="@string/activity_translatetext"
+            android:theme="@style/Theme.Project.Base"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.farrusco.filecatalogue.project" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".basis.ScanImageTab"
+            android:label="@string/activity_scanimage"
+            android:theme="@style/Theme.Project.Base"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.farrusco.filecatalogue.project" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".basis.ScannerMainActivity"
+            android:exported="true"
+            android:label="@string/activity_scanner"
+            android:configChanges="screenSize|orientation|screenLayout|navigation"
+            android:theme="@style/Theme.Project.Base">
+            <intent-filter>
+                <action android:name="com.farrusco.filecatalogue.project" />
+            </intent-filter>
+        </activity>
+        <!-- ************************************* -->
+        <!-- system -->
+        <!-- ************************************* -->
+
+        <activity
+            android:name=".basis.ListBackup"
+            android:theme="@style/Theme.Project.Base"
+            android:label="@string/activity_backup"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.farrusco.filecatalogue.system" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".basis.ListRestore"
+            android:theme="@style/Theme.Project.Base"
+            android:label="@string/activity_restore"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.farrusco.filecatalogue.system" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".basis.ListOptionsTab"
+            android:theme="@style/Theme.Project.Base"
+            android:label="@string/activity_list_options"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.farrusco.filecatalogue.system" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".basis.ListQuery"
+            android:theme="@style/Theme.Project.Base"
+            android:label="@string/activity_list_query"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.farrusco.filecatalogue.system" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".common.HelpMaint"
+            android:theme="@style/Theme.Project.Base"
+            android:label="@string/activity_list_help"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.farrusco.filecatalogue.system" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".basis.ReorgDb"
+            android:label="@string/activity_reorgdb"
+            android:theme="@style/Theme.Project.Base"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.farrusco.filecatalogue.system" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".basis.SampleDb"
+            android:label="@string/activity_sampledb"
+            android:theme="@style/Theme.Project.Base"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.farrusco.filecatalogue.system" />
+            </intent-filter>
+        </activity>
+
+        <!-- ************************************* -->
+        <!-- activity not in menu -->
+        <!-- ************************************* -->
+
+        <activity
+            android:name=".common.HelpMaintDetail"
+            android:theme="@style/Theme.Project.Base"
+            android:label="@string/activity_detail_help"
+            android:exported="false" />
+
+        <activity android:name="com.farrusco.projectclasses.barcodescanner.ui.BarcodeScanningActivity"
+            android:theme="@style/FullScreenTheme"
+            android:exported="false"/>
+
+        <activity
+            android:name=".basis.DetailFileDirsTab"
+            android:theme="@style/Theme.Project.Base"
+            android:label="@string/activity_detail_filedirs"
+            android:exported="false" />
+
+        <activity
+            android:name="com.farrusco.projectclasses.common.ShowHelp"
+            android:label="@string/help"
+            android:theme="@android:style/Theme.Dialog"
+            android:exported="false"  >
+        </activity>
+
+        <activity
+            android:name=".basis.DetailCategory"
+            android:theme="@style/Theme.Project.Base"
+            android:label="@string/activity_detail_category"
+            android:exported="false" />
+
+        <activity
+            android:name=".order.ListFiles"
+            android:theme="@style/Theme.Project.Base"
+            android:label="@string/activity_list_files"
+            android:exported="false" />
+
+
+        <activity
+            android:name=".order.DetailOrderTab"
+            android:label="@string/activity_detail_order"
+            android:theme="@style/Theme.Project.Base"
+            android:exported="false" >
+        </activity>
+
+        <activity
+            android:name=".common.SearchFilesSub"
+            android:label="@string/activity_search_files_sub"
+            android:theme="@style/Theme.Project.Base"
+            android:exported="false" />
+
+        <activity
+            android:name=".basis.DetailFileTab"
+            android:label="@string/activity_detail_files"
+            android:theme="@style/Theme.Project.Base"
+            android:exported="false" />
+
+        <activity
+            android:name=".common.About"
+            android:label="@string/about"
+            android:theme="@android:style/Theme.Dialog"
+            android:exported="false" />
+
+        <activity
+            android:name="com.farrusco.projectclasses.graphics.imagescanner.CameraActivity"
+            android:theme="@style/Theme.Project.Base"
+            android:exported="false"
+            />
+    </application>
+
+</manifest>

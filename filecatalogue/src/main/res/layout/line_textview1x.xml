@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content">
+
+	<!--https://stackoverflow.com/questions/10748796/android-how-to-limit-width-of-textview-and-add-three-dots-at-the-end-of-text
+	-->
+
+	<com.farrusco.projectclasses.widget.TextViewExt
+		android:id="@+id/colText1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="@dimen/normal_4sp"
+		android:layout_marginEnd="@dimen/normal_4sp"
+		android:theme="@style/Project.TextViewStyle.Large"
+		android:layout_weight="0.95"
+		android:ellipsize="end"
+		android:maxLines="1"
+		app:textContextMenu = "false"/>
+
+	<include
+		layout="@layout/button_popupmenu"
+		android:layout_weight="0.05"
+		android:layout_width="@dimen/normal_40sp"
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical" />
+</TableRow>

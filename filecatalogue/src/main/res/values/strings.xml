@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" translatable="false">File catalogue</string>
+    <string name="app_name1" translatable="false">File</string>
+    <string name="app_name2" translatable="false">catalogue</string>
+    <string name="app_name3" translatable="false">File - catalogue</string>
+    <string name="autonew">automatic new</string>
+    <string name="packagename" translatable="false">com.farrusco.filecatalogue</string>
+    <string name="pageFirst" translatable="false">|&lt;</string>
+    <string name="pagePrevious" translatable="false">&lt;</string>
+    <string name="pageNext" translatable="false">&gt;</string>
+    <string name="pageLast" translatable="false">&gt;|</string>
+    <string name="Day" >Day</string>
+    <string name="Month">Month</string>
+    <string name="Year">Year</string>
+    <string name="about">About</string>
+    <string name="about_text1" translatable="false">%1$s v%2$s
+		\n\nCopyright 2024 File Catalogue
+		\n\nLicensed under the Apache License, Version 2.0 (the "License");
+		you may not use any part of this distribution except in
+		compliance with the License. You may obtain a copy of the
+		License at http://www.apache.org/licenses/LICENSE-2.0 Unless
+		required by applicable law or agreed to in writing, software
+		distributed under the License is distributed on an "AS IS"
+		BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+		express or implied. See the License for the specific language
+		governing permissions and limitations under the License.
+	</string>
+    <string name="activity_backup">Backup</string>
+    <string name="activity_list_help">List help</string>
+    <string name="activity_detail_help">Detail help</string>
+    <string name="activity_list_category">List category</string>
+    <string name="activity_detail_category">Detail category</string>
+    <string name="activity_list_options">Options</string>
+    <string name="activity_list_order">List Order</string>
+    <string name="activity_detail_order">Detail Order</string>
+    <string name="activity_list_filedirs">Maintenance folders</string>
+    <string name="activity_detail_filedirs">Detail folders</string>
+    <string name="activity_search_files">Search files</string>
+    <string name="activity_search_files_sub">Search files sub</string>
+    <string name="activity_detail_files">Detail files</string>
+    <string name="activity_list_files">List files</string>
+    <string name="activity_list_query">Stored Queries</string>
+    <string name="activity_file_order">Order</string>
+    <string name="lblfilecatalogue" translatable="false">File TOC</string>
+    <string name="activity_refreshgps">Refresh GPS</string>
+    <string name="activity_refreshface">Refresh Face recognition</string>
+    <string name="activity_sampledb">Sample database</string>
+    <string name="activity_scanimage">Scan image</string>
+    <string name="activity_translatetext">Translate text</string>
+    <string name="activity_reorgdb">Reorganize database</string>
+    <string name="activity_restore">Restore</string>
+    <string name="activity_scanner">QR-/Bar-code scanner</string>
+    <string name="amount">Amount</string>
+    <string name="backup">Backup</string>
+    <string name="base">Base</string>
+    <string name="cancel">Cancel</string>
+    <string name="category">category</string>
+    <string name="copycategory">Copy category from file</string>
+    <string name="changelog">Changes</string>
+    <string name="city">City</string>
+    <string name="code">Code</string>
+    <string name="count">Count</string>
+    <string name="creation">Creation</string>
+    <string name="fileextension">File extension</string>
+    <string name="gps">GPS</string>
+    <string name="gpsrefresh">GPS refresh</string>
+    <string name="search">Search</string>
+    <string name="searchreset">Search reset</string>
+    <string name="searchsave1">Searchcommand save</string>
+    <string name="searchload1">Searchcommand load</string>
+    <string name="date">Date</string>>
+    <string name="delete">Delete</string>
+    <string name="clearing">Clearing</string>
+    <string name="details">Details</string>
+    <string name="description">Description</string>
+    <string name="file">File</string>
+    <string name="directory">Directory</string>
+    <string name="sizekb">Size (kb)</string>
+    <string name="distance">Similar</string>
+    <string name="sizemb">Size (mb)</string>
+    <string name="description200">Description (max 200)</string>
+    <string name="empty">(Empty)</string>
+    <string name="graph">Graph</string>
+    <string name="help" translatable="false">Help</string>
+    <string name="enabled">enabled</string>
+    <string name="lastmodified">Last modified</string>
+    <string name="help_listfiles">help list files</string>
+    <string name="help_listfiles_long">help list files long</string>
+    <string name="lblddmmyyyy">d-M-yyyy</string>
+    <string name="lbladdress">Address</string>
+    <string name="lblamount">Amount</string>
+    <string name="lblblock">Block</string>
+    <string name="lblcategory">Category</string>
+    <string name="lblbackup">Backup</string>
+    <string name="lblrestore">Restore</string>
+    <string name="lblcode">Code</string>
+    <string name="lblhide">Hide</string>
+    <string name="lblshow">Show</string>
+    <string name="lblcity">City</string>
+    <string name="lbldeliverdate">Deliverdate</string>
+    <string name="lbldescription">Description</string>
+    <string name="lbltitle">Title</string>
+    <string name="lbldir">Directory</string>
+    <string name="lblheader">Title</string>
+    <string name="lblname">Name</string>
+    <string name="lblemail">EMail</string>
+    <string name="lblordercode">Ordercode</string>
+    <string name="lblorderdate">Orderdate</string>
+    <string name="lblorderno">Order</string>
+    <string name="lblpostalcity">Postalcity</string>
+    <string name="lblpostalcode">Postalcode</string>
+    <string name="lblprice">Price</string>
+    <string name="lblrecursive">Include sub directory</string>
+    <string name="lblremarks">Remarks</string>
+    <string name="lblsubno">Subno</string>
+    <string name="lblseqno">Seqno</string>
+    <string name="lblsubcategory">Sub category</string>
+    <string name="lblsubdir">Sub directory</string>
+    <string name="lbldiscount">Discount</string>
+    <string name="lbltotal">Total</string>
+    <string name="lbldots" translatable="false">…</string>
+    <string name="lines">Lines</string>
+    <string name="name">Name</string>
+    <string name="no">No</string>
+    <string name="newfile">New</string>
+    <string name="ok" translatable="false">OK</string>
+    <string name="order">Order</string>
+    <string name="orderline">Orderline</string>
+    <string name="password">password</string>
+    <string name="price">Price</string>
+    <string name="exportfile">Export</string>
+    <string name="importfile">Import</string>
+    <string name="project">Project</string>
+    <string name="rem">Remarks</string>
+    <string name="restore">Restore</string>
+    <string name="reset">Reset</string>
+    <string name="selectfolder">Select a folder</string>
+    <string name="folder">Folder</string>
+    <string name="selectfile">Select a file</string>
+    <string name="settings_choose_file">Choose file</string>
+    <string name="copy_from_file">TOC from…</string>
+
+    <string name="noofcolumns">Files horizontal</string>
+    <string name="sort">Sort</string>
+    <string name="tooltip">tooltip</string>
+    <string name="gbwhatsapp">GBWhatsApp</string>
+    <string name="listfiles">list files horizontal</string>
+    <string name="deleteemptyproduct">delete empty files</string>
+
+    <string name="select">Select</string>
+    <string name="fromcontacts">from contactlist</string>
+    <string name="salesman">Salesman</string>
+    <string name="salesaddress">sales address</string>
+    <string name="salesemail">sales email</string>
+    <string name="save">Save</string>
+    <string name="print" translatable="false">Print</string>
+    <string name="whatsapp" translatable="false">WhatsApp</string>
+    <string name="scanface">Scan face</string>
+    <string name="searchface">Search face</string>
+    <string name="shortdescription">Short description</string>
+    <string name="site">Website</string>
+    <string name="street">Street</string>
+    <string name="system">System</string>
+    <string name="total">Total</string>
+    <string name="totalsub">Sub total</string>
+    <string name="yes">Yes</string>
+    <string name="OnlyBlocked">Only hidden files</string>
+    <string name="OnlyAvailable">Only available files</string>
+    <string name="AvailableBlocked">Available &amp; hidden files</string>
+    <string name="jpg">JPG,JPEG</string>
+    <string name="bmp">BMP</string>
+    <string name="lbltype">Type</string>
+
+    <string name="dots" translatable="false">…</string>
+    <string name="rotateleft">Rotate left</string>
+    <string name="rotateright">Rotate right</string>
+    <string name="left">left</string>
+    <string name="right">right</string>
+    <string name="gpsinfo">GPS information</string>
+    <string name="scantext">Scan text</string>
+
+    <string name="gpsadminarea">province</string>
+    <string name="gpssubAdminarea">region</string>
+    <string name="gpslocality">city</string>
+    <string name="gpsthoroughfare">street</string>
+    <string name="gpspostalcode">postal code</string>
+    <string name="gpscountrycode">country code</string>
+    <string name="gpscountryname">country name</string>
+    <string name="gpsfeaturename">house number</string>
+    <string name="gpsphone">phone</string>
+    <string name="gpsurl">url</string>
+    <string name="gpsextras">extras</string>
+    <string name="version">Version</string>
+    <string name="backupfolder">Backup folder</string>
+    <string name="ocr2clipboard">OCR to clipboard</string>
+    <string name="qr2clipboard">QR/barcode to clipboard</string>
+
+    <string name="systemattr_01">Version</string>
+    <string name="systemattr_02">Backup folder</string>
+    <string name="systemattr_03">TOC of file extension - enabled</string>
+    <string name="systemattr_04">Cvsname</string>
+    <string name="systemattr_05">About</string>
+    <string name="systemattr_06">Help - enabled</string>
+    <string name="systemattr_07">Tooltip - enabled</string>
+    <string name="systemattr_08">Orders - enabled</string>
+    <string name="systemattr_09">Use price</string>
+    <string name="systemattr_10">GBwhatsapp - enabled</string>
+    <string name="systemattr_11">Automatic TOC of new files</string>
+    <string name="systemattr_12">Reorganize database - enabled</string>
+    <string name="systemattr_13">List files horizontal</string>
+    <string name="systemattr_14">Last path</string>
+    <string name="systemattr_15">Sales EMail</string>
+    <string name="systemattr_16">Sales name</string>
+    <string name="systemattr_17">Sales address</string>
+    <string name="systemattr_18">Store last query - enabled</string>
+    <string name="systemattr_19">Store GPS information</string>
+    <string name="systemattr_20">Delete empty product</string>
+    <string name="systemattr_21">No of backups</string>
+    <string name="systemattr_22">Delete file on phone - enabled</string>
+    <string name="systemattr_23">Smart copy category - enabled</string>
+    <string name="systemattr_24">Registration</string>
+    <string name="systemattr_25">Store query</string>
+    <string name="systemattr_26">Auto refresh folder</string>
+    <string name="systemattr_27">Scan image - enabled</string>
+    <string name="systemattr_28">Translate text - enabled</string>
+    <string name="systemattr_29">Scan QR-Code - enabled</string>
+    <string name="systemattr_30">Single filelist with label - enabled</string>
+    <string name="systemattr_31">Search available files - enabled</string>
+    <string name="systemattr_32">Search hidden files - enabled</string>
+    <string name="systemattr_33">Sort creation year - descending</string>
+    <string name="systemattr_34">Sort creation month - descending</string>
+    <string name="systemattr_35">Store filesize - descending</string>
+    <string name="systemattr_36">Show filesize MB - descending</string>
+    <string name="systemattr_37">Search seqno folder</string>
+    <string name="systemattr_38">Search seqno creation</string>
+    <string name="systemattr_39">Search seqno extension</string>
+    <string name="systemattr_40">Search seqno GPS</string>
+    <string name="filefancyscroll_41">Fancy scrollbar</string>
+    <string name="systemattr_42">Search seqno Face</string>
+    <string name="systemattr_43">Face Recognition</string>
+    <string name="systemattr_44">Face Distance (0–1.0)</string>
+
+</resources>

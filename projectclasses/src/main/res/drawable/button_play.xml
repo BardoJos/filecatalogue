@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_enabled="true"
+        android:state_pressed="false">
+        <layer-list>
+            <item
+                android:width="@dimen/normal_40sp"
+                android:height="@dimen/normal_40sp">
+                <shape
+                    android:shape="rectangle" >
+                    <solid android:color="#D7D7D7"/>
+                    <corners
+                        android:radius="4sp" />
+                </shape>
+            </item>
+            <item
+                android:gravity="center"
+                android:height="@dimen/normal_30sp"
+                android:width="@dimen/normal_30sp"
+                android:drawable="@android:drawable/ic_media_play"/>
+
+        </layer-list>
+    </item>
+    <item
+        android:state_enabled="true"
+        android:state_pressed="true">
+        <layer-list>
+            <item
+                android:width="@dimen/normal_40sp"
+                android:height="@dimen/normal_40sp">
+                <shape
+                    android:shape="rectangle" >
+                    <solid android:color="#b7b7b7"/>
+                    <corners
+                        android:radius="4sp" />
+                </shape>
+            </item>
+            <item
+                android:gravity="center"
+                android:height="@dimen/normal_30sp"
+                android:width="@dimen/normal_30sp"
+                android:drawable="@android:drawable/ic_media_play" />
+
+        </layer-list>
+    </item>
+    <item
+        android:state_enabled="false"
+        android:drawable="@drawable/empty" />
+</selector>

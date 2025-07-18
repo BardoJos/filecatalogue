@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewMain"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black"
+    android:orientation="vertical" >
+
+    <include
+        layout="@layout/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_default"
+        android:layout_marginEnd="@dimen/margin_default"
+        android:stretchColumns="1" >
+
+        <TableRow tools:ignore="UselessParent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lblorderno" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_default"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/lblBedrag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_default"
+                android:text="@string/lbltotal" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtBedrag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_default"
+                android:hint="@string/price" >
+            </TextView>
+        </TableRow>
+    </TableLayout>
+
+    <com.farrusco.projectclasses.widget.ButtonExt
+        android:id="@+id/btnNew"
+        android:layout_width="@dimen/normal_40sp"
+        android:layout_height="@dimen/normal_40sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/margin_default"
+        android:background="@drawable/button_add"
+        android:scaleType="fitXY" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/margin_default"
+        android:layout_margin="@dimen/margin_default"
+        android:background="@color/solid_darkred"
+        android:gravity="center_horizontal" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TableLayout
+            android:id="@+id/tblOrderLines"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_default"
+            android:stretchColumns="1" >
+
+            <TableRow>
+
+                <ImageView
+                    android:id="@+id/colPic"
+                    android:layout_width="@dimen/normal_60sp"
+                    android:layout_height="@dimen/normal_60sp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/description"
+                    android:maxHeight="@dimen/normal_60sp"
+                    android:maxWidth="@dimen/normal_60sp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/colShort"
+                    android:theme="@style/Project.TextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_default"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:height="@dimen/normal_60sp"
+                    android:hint="@string/lines"
+                    android:maxLines="2">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/colBedrag"
+                    android:theme="@style/Project.TextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_default"
+                    android:layout_marginEnd="@dimen/margin_default"
+                    android:gravity="end"
+                    android:hint="@string/price" >
+                </TextView>
+            </TableRow>
+
+            <TableRow>
+                <include layout="@layout/line_separator_2sp"/>
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+</LinearLayout>

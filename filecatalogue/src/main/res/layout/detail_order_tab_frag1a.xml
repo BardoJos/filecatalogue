@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/margin_default">
+    <com.farrusco.projectclasses.widget.ImageViewExt
+        android:theme="@style/Theme.AppCompat"
+        android:id="@+id/colPic"
+        android:layout_width="@dimen/normal_60sp"
+        android:layout_height="@dimen/normal_60sp"
+        android:contentDescription="@string/file"
+        android:maxHeight="@dimen/normal_60sp"
+        android:maxWidth="@dimen/normal_60sp"
+        android:layout_marginStart="@dimen/margin_default"
+        android:layout_marginEnd="@dimen/margin_default" />
+
+    <com.farrusco.projectclasses.widget.TextViewExt
+        android:theme="@style/Project.TextViewStyle"
+        android:id="@+id/colShort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_default"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:height="@dimen/normal_60sp"
+        android:hint="@string/lines"
+        android:maxLines="2"/>
+
+    <com.farrusco.projectclasses.widget.TextViewExt
+        android:theme="@style/Project.TextViewStyle"
+        android:id="@+id/colAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_default"/>
+
+    <com.farrusco.projectclasses.widget.TextViewExt
+        android:theme="@style/Project.TextViewStyle"
+        android:id="@+id/colBedrag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_default"
+        android:gravity="end"  />
+
+    <include
+        layout="@layout/button_popupmenu"
+        android:layout_width="@dimen/normal_48sp"
+        android:layout_height="@dimen/normal_48sp"
+        android:layout_marginEnd="@dimen/margin_default" />
+</TableRow>

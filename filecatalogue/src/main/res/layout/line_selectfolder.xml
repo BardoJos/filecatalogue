@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<com.farrusco.projectclasses.widget.TextViewExt
+		android:id="@+id/colFolder"
+		android:theme="@style/TextView"
+		android:gravity="center_vertical"
+		android:layout_width="wrap_content"
+		android:layout_marginEnd="@dimen/margin_default"
+		android:layout_weight="0.9"/>
+	<com.farrusco.projectclasses.widget.ButtonExt
+		android:id="@+id/btnSelectFolder"
+		android:theme="@style/Project.ButtonStyle"
+		android:background="@drawable/button_default"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="@dimen/margin_default"
+		android:text="@string/folder"
+		android:layout_weight="0.1"/>
+</TableRow>

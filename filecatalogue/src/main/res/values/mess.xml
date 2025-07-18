@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+	<string name="noFilemanagerInstalled">No File manager Installed</string>
+
+	<string name="incoming_message_notify_text">Show Notification</string>
+	<string name="incoming_message_view_message_text">this is the text of a previous message.</string>
+	<string name="imcoming_message_view_message2_text">Did you notice that the status bar icon disappeared?</string>
+	<string name="imcoming_message_ticker_text">New message: <xliff:g id="text">%0$s</xliff:g></string>
+
+	<!-- License checking status messages -->
+
+	<string name="mess001_inuse">This article is in use and cannot deleted.</string>
+	<string name="mess002_saved">Data is saved.</string>      
+	<string name="mess003_notnull">%0% must be filled.</string>
+	<string name="mess004_deleteyn">Are you sure to delete this one?</string>
+	<string name="mess005_nocreatefolder">Can\'t create folder: </string> 
+	<string name="mess006_listready">Print is ready, look for: </string>
+	<string name="mess007_listerr">Print failed</string> 
+	<string name="mess008_nodata">No data found</string> 
+	<string name="mess009_noselection">No selection have been made</string> 
+	<string name="mess010_fileimported">File is imported into database.</string>
+	<string name="mess011_exportcomplete">Exporting database complete.</string>
+	<string name="mess012_articleinuse">This article is in use and cannot removed.</string>
+	<string name="mess013_novalidfile">No valid file.</string>
+	<string name="mess014_totaladded">Total inserted:</string>
+	<string name="mess015_alreadyadded">Already inserted:</string>
+	<string name="mess016_selectfolder">Select a folder</string>
+	<string name="mess017_lowmemory">Memory low</string> 
+	<string name="mess018_listready">Print is ready, look for: </string> 
+	<string name="mess019_errexport">Export failed</string>
+	<string name="mess020_imexportequals">Format of import and export are equal.
+		\ncode,title,price,description
+		\n\"aaaaa\",\"bbbbb\",1.23,\"ccccc\"
+	</string>
+	<string name="mess022_reorgdb_ready">Reorganize database ready</string> 
+	<string name="mess023_reorgdb_not_ready">Reorganize database not necessary</string>
+	<string name="mess025_Error">Error:</string>
+	<string name="mess024_No_products">No products</string>
+	<string name="mess026_one_moment">One moment please…</string>
+	<string name="mess027_please_wait">Please wait while loading…</string>
+	<string name="mess028_show_orderlines">Show orderlines</string>
+	<string name="mess029_seqno_backup">Seqno of backup</string>
+	<string name="mess030_seqno_restore">Seqno of restore</string>
+	<string name="mess031_password_not_equal">Passwords are not equal</string>
+	<string name="mess032_notsaved">Data is not saved.</string>      
+	<string name="mess033_validateerror">Validation error.</string>  
+	<string name="mess034_DoYouWantToSave">Do you want to save?</string>
+	<string name="mess037_MainHandlerError" translatable="false">mViewMain is null</string>
+	<string name="mess039_notnull">Field(s) not allowed to be empty.</string>
+	<string name="mess040_recordinuse">\'<xliff:g id="text">%0$s</xliff:g>\' is in use.</string>
+	<string name="mess041_rangeerror">Range error.</string>
+	<string name="mess041_maxvalue">Above max value</string>
+	<string name="mess042_exception">Exception: <xliff:g id="text">%0$s</xliff:g></string>
+	<string name="mess043_notnumeric">Value is not numeric</string>
+	<string name="mess044_typequestioncodeerror">Value range error [1&#8211;4]</string>
+	<string name="mess045_typecalculationcodeerror">Value range error [1&#8211;2]</string>
+	<string name="mess046_RefreshReady">Refresh done</string>
+	<string name="mess047_please_wait">Please wait while saving…</string>
+	<string name="mess048_mail_error">Permission must be granted in order to display contacts information</string>
+	<string name="mess049_external_read_error">Check you have storage read permission access.</string>
+	<string name="mess050_external_write_error">Check you have storage write permission access.</string>
+	<string name="mess051_no_files">No file in database.</string>
+	<string name="mess052_fatal_db_error">Fatal database error; database will be recreated</string>
+	<string name="mess053_no_connection">No connection</string>
+	<string name="mess054_totalUpdated">Total updated: %0%</string>
+	<string name="mess055_presslong4menu">Press long for menu</string>
+	<string name="mess056_overlapfolder">Folder overlaps another folder</string>
+	<string name="mess057_notif">Tif is not allowed</string>
+	<string name="mess057_presslong4menu">Press long for menu. Found(%0%)</string>
+	<string name="mess058_demo">Demo cannot contains/show more than %0% files</string>
+	<string name="mess059_rangeerror">Value range error</string>
+	<string name="mess060_copydone">Copy done</string>
+	<string name="mess061_noupdate">No update</string>
+	<string name="mess062_noaccess_file">No file access rights</string>
+	<string name="mess063_presslong4menuorright">Press long or right button for menu</string>
+	<string name="mess064_pressrightbutton4menu">Press right button for menu</string>
+	<string name="mess065_external_read_error">Check you have media images read permission access.</string>
+	<string name="mess066_savefirst">Save data first.</string>
+	<string name="mess067_taskStart">Task started.</string>
+	<string name="mess068_taskStop">Task ended.</string>
+	<string name="mess069_duplapp">Program was already active.</string>
+	<string name="mess070_notranslation">Translation error.</string>
+	<string name="mess071_canceltranslation">Translation canceled.</string>
+	<string name="mess072_all_txt_copy_to_clipboard">Text copied to clipboard</string>
+	<string name="mess073_clearyn">Are you sure to clear this one?</string>
+	<string name="mess074_noface">No face found</string>
+	<string name="mess075_multiplefaces">Multiple faces found</string>
+
+	<string name="tip001_save">Data wil be saved.</string>
+	<string name="tip002_detaillines">Show details.</string>
+	<string name="tip003_delete">Delete data.</string>
+	<string name="tip004_print">Print data.</string>
+	<string name="tip005_find">Search for data.</string>
+	<string name="tip006_category">Category</string>
+	<string name="tip007_filldb">Fill database</string>
+	<string name="tip008_new">Add new data</string>
+	<string name="tip009_search">Show data</string>
+	<string name="tip010_mail">Send by E-Mail</string>
+	<string name="tip011_tcpip">Send with tcpip protocol</string>
+	<string name="tip012_blocked">Show blocked file</string>
+
+</resources>

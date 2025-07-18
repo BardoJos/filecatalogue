@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<ImageView
+		android:id="@+id/icon_image"
+		android:src="@drawable/stub"
+		android:layout_marginEnd="@dimen/margin_default"
+		android:layout_marginBottom="@dimen/margin_default"
+		android:layout_width="@dimen/normal_60sp"
+		android:layout_height="@dimen/normal_60sp"
+		android:clickable="false"
+		android:longClickable="true"
+		tools:ignore="ContentDescription">
+	</ImageView>
+
+	<com.farrusco.projectclasses.widget.TextViewExt
+		android:id="@+id/icon_text"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/margin_default"
+		android:height="@dimen/normal_60sp"
+		android:gravity="center_vertical"
+		android:lines="1"
+		android:textColorHighlight="#656565"
+		android:theme="@style/Project.TextViewStyle"
+		android:layout_weight="1"/>
+</TableRow>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<GridView
+		android:id="@+id/gridview"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:columnWidth="@dimen/normal_60sp"
+		android:gravity="center"
+		android:horizontalSpacing="@dimen/normal_10sp"
+		android:numColumns="auto_fit"
+		android:paddingTop="@dimen/normal_10sp"
+		android:paddingBottom="@dimen/normal_10sp"
+		android:paddingStart="@dimen/normal_10sp"
+		android:paddingEnd="@dimen/normal_10sp"
+		android:stretchMode="columnWidth"
+		android:visibility="gone"
+		android:verticalSpacing="@dimen/normal_10sp" />
+
+	<ImageView
+		android:id="@+id/icon_image"
+		android:src="@drawable/stub"
+		android:layout_marginEnd="@dimen/margin_default"
+		android:layout_marginBottom="@dimen/margin_default"
+		android:layout_width="@dimen/normal_60sp"
+		android:layout_height="@dimen/normal_60sp"
+		android:clickable="false"
+		android:longClickable="true"
+		tools:ignore="ContentDescription">
+	</ImageView>
+	<com.farrusco.projectclasses.widget.TextViewExt
+		android:theme="@style/Project.TextViewStyle"
+		android:id="@+id/icon_text"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/margin_default"
+		android:lines="1"
+		android:height="@dimen/normal_60sp"
+		android:gravity="center_vertical"
+		android:textColorHighlight="#656565"/>
+	<include
+		layout="@layout/button_popupmenu"
+		android:layout_width="@dimen/normal_40sp"
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical" />
+</TableRow>

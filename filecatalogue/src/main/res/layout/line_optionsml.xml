@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TableLayout android:stretchColumns="0">
+        <TableRow>
+            <com.farrusco.projectclasses.widget.TextViewExt
+                android:text="@string/label_parent_dir"
+                android:theme="@style/Project.TextViewStyle"
+                android:id="@+id/tvLabel"
+                android:layout_marginTop="@dimen/margin_default"
+                android:layout_marginBottom="@dimen/margin_default"
+                android:layout_marginEnd="@dimen/margin_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </com.farrusco.projectclasses.widget.TextViewExt>
+        </TableRow>
+        <TableRow>
+            <com.farrusco.projectclasses.widget.EditTextExt
+                android:id="@+id/tvValue"
+                android:theme="@style/Project.EditTextStyle.Ultra"
+                android:background="@drawable/edittext_gradient"
+                android:textColor="@color/black"
+                android:text="@string/empty"
+                android:layout_marginTop="@dimen/margin_default"
+                android:layout_marginBottom="@dimen/margin_default"
+                android:layout_width="0sp">
+            </com.farrusco.projectclasses.widget.EditTextExt>
+        </TableRow>
+    </TableLayout>
+</TableRow>

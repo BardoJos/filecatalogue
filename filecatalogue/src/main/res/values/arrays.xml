@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string-array name="search_files">
+        <item>Code</item>
+        <item>Short description</item>
+        <item>Description</item>
+    </string-array>
+
+    <string-array name="sort_filesIncl">
+        <item>Creation year/month descending</item>
+        <item>Creation year/month ascending</item>
+        <item>Folder/filename</item>
+        <item>Code</item>
+        <item>Available date</item>
+        <item>Size descending</item>
+        <item>Size ascending</item>
+    </string-array>
+    <string-array name="sort_files">
+        <item>Creation year/month descending</item>
+        <item>Creation year/month ascending</item>
+        <item>Folder/filename</item>
+        <item>Code</item>
+        <item>Available date</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+        <LinearLayout
+        android:id="@+id/viewMain1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/margin_default"
+        android:layout_marginEnd="@dimen/margin_default">
+
+        <com.farrusco.projectclasses.widget.TextViewExt
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:theme="@style/Project.TextViewStyle"
+            android:text="@string/lbltitle" />
+
+            <com.farrusco.projectclasses.widget.EditTextExt
+                android:id="@+id/txtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edittext_gradient"
+                android:theme="@style/Project.EditTextStyle.Ultra"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        <com.farrusco.projectclasses.widget.TextViewExt
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/lbldescription"
+            android:theme="@style/Project.TextViewStyle"
+            android:labelFor="@id/txtOms" />
+
+        <com.farrusco.projectclasses.widget.EditTextExt
+            android:id="@+id/txtOms"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:theme="@style/Project.EditTextStyle.Ultra"
+            app:validate="empty"  />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1" >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/margin_default" >
+
+                <com.farrusco.projectclasses.widget.TextViewExt
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/lblcode"
+                    android:theme="@style/Project.TextViewStyle"
+                    android:labelFor="@id/txtCode"
+                    android:layout_marginEnd="@dimen/margin_default"/>
+
+                <com.farrusco.projectclasses.widget.EditTextExt
+                    android:id="@+id/txtCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:theme="@style/Project.EditTextStyle.Ultra"
+                    android:inputType="text"
+                    android:layout_span="2"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/margin_default" >
+
+                <com.farrusco.projectclasses.widget.TextViewExt
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:theme="@style/Project.TextViewStyle"
+                    android:text="@string/date"
+                    android:layout_marginEnd="@dimen/margin_default" />
+
+                <com.farrusco.projectclasses.widget.TextViewExt
+                    android:id="@+id/txtDateAvailable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_gradient"
+                    android:importantForAccessibility="no"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_textview"
+                    app:textContextMenu="true"
+                    app:textformat="dateshort"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/margin_default" >
+                <com.farrusco.projectclasses.widget.TextViewExt
+                    android:id="@+id/lblPrijs"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/price"
+                    android:gravity="center_vertical"
+                    android:theme="@style/Project.TextViewStyle"
+                    android:layout_marginEnd="@dimen/margin_default"/>
+
+                <include
+                    android:id="@+id/hdrPrijs"
+                    android:importantForAccessibility="no"
+                    layout="@layout/field_amountrow" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/margin_default" >
+
+                <com.farrusco.projectclasses.widget.TextViewExt
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/lblhide"
+                    android:theme="@style/Project.TextViewStyle"
+                    android:layout_marginEnd="@dimen/margin_default"/>
+
+                <com.farrusco.projectclasses.widget.SwitchExt
+                    android:id="@+id/colBlok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/Project.EditTextStyle"
+                    android:layout_gravity="start"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/margin_default" >
+
+                <com.farrusco.projectclasses.widget.TextViewExt
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/creation"
+                    android:theme="@style/Project.TextViewStyle"
+                    android:layout_marginEnd="@dimen/margin_default"/>
+
+                <com.farrusco.projectclasses.widget.TextViewExt
+                    android:id="@+id/txtCreation"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_textview"
+                    android:layout_width="match_parent"
+                    app:textformat="dateshort"
+                    android:layout_height="wrap_content" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/margin_default" >
+
+                <com.farrusco.projectclasses.widget.TextViewExt
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:theme="@style/Project.TextViewStyle"
+                    android:text="@string/file"
+                    android:layout_marginEnd="@dimen/margin_default" />
+
+                <com.farrusco.projectclasses.widget.TextViewExt
+                    android:id="@+id/txtFilename"
+                    android:textColor="@color/white"
+                    android:theme="@style/Project.TextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/margin_default" >
+
+                <com.farrusco.projectclasses.widget.TextViewExt
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:theme="@style/Project.TextViewStyle"
+                    android:text="@string/directory"
+                    android:layout_marginEnd="@dimen/margin_default"/>
+
+                <com.farrusco.projectclasses.widget.TextViewExt
+                    android:id="@+id/txtDirname"
+                    android:textColor="@color/white"
+                    android:theme="@style/Project.TextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"/>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/rowSize"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/margin_default" >
+
+                <com.farrusco.projectclasses.widget.TextViewExt
+                    android:id="@+id/lblSize"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:theme="@style/Project.TextViewStyle"
+                    android:text="@string/sizekb"
+                    android:layout_marginEnd="@dimen/margin_default"/>
+
+                <com.farrusco.projectclasses.widget.TextViewExt
+                    android:id="@+id/txtSize"
+                    android:textColor="@color/white"
+                    android:theme="@style/Project.TextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"/>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/rowDistance"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/margin_default" >
+
+                <com.farrusco.projectclasses.widget.TextViewExt
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:theme="@style/Project.TextViewStyle"
+                    android:text="@string/distance"
+                    android:layout_marginEnd="@dimen/margin_default"/>
+
+                <com.farrusco.projectclasses.widget.TextViewExt
+                    android:id="@+id/txtDistance"
+                    android:textColor="@color/white"
+                    android:theme="@style/Project.TextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"/>
+
+            </TableRow>
+        </TableLayout>
+
+        <com.farrusco.projectclasses.widget.EditTextExt
+            android:id="@+id/txtRotation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/EditText"
+            android:textSize="@dimen/normal_1sp"
+            android:visibility="gone"
+            android:importantForAccessibility="no"/>
+
+        <com.farrusco.projectclasses.widget.EditTextExt
+            android:id="@+id/txtGPSLocation"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textSize="@dimen/normal_1sp"
+            android:visibility="gone"
+            android:importantForAccessibility="no"/>
+
+        <com.farrusco.projectclasses.widget.EditTextExt
+            android:id="@+id/txtGPSStatus"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textSize="@dimen/normal_1sp"
+            android:visibility="gone"
+            android:importantForAccessibility="no"/>
+
+    </LinearLayout>
+    </ScrollView>
+</FrameLayout>

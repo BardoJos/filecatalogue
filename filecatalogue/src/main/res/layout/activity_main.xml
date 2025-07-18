@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    android:orientation="vertical"
+    tools:context=".SplashScreen">
+
+    <include
+        layout="@layout/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:textSize="@dimen/font_size_textview"
+        android:cacheColorHint="#03FFFFFF"
+        android:visibility="gone">
+    </ListView>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_56sp"
+        android:textSize="@dimen/font_size_textview"
+        app:tabBackground="@color/Blue"
+        app:tabGravity="fill"
+        app:tabIconTint="@color/white"
+        app:tabIndicatorColor="@color/design_default_color_primary"
+        app:tabIndicatorHeight="@dimen/normal_2sp"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/Yellow"
+        app:tabTextColor="@color/white"
+        app:textAllCaps="false"
+        app:tabTextAppearance="@style/Project.EditTextStyle.Large"  />
+    <!--app:tabSelectedTextAppearance="@style/Project.EditTextStyle.Large"-->
+
+    <include layout="@layout/line_separator_2sp"/>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/normal_9sp"
+        android:layout_marginEnd="@dimen/normal_9sp"
+        android:textSize="@dimen/font_size_textview"
+        app:adSize="FULL_BANNER"
+        app:adUnitId="@string/AD_MOB_DASHBOARD_AD_ID" />
+
+</LinearLayout>

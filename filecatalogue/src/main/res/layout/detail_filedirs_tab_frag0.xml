@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/viewMain"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:layout_marginStart="@dimen/margin_default"
+            android:layout_marginEnd="@dimen/margin_default">
+
+            <TableRow
+                android:layout_width="match_parent">
+
+                <com.farrusco.projectclasses.widget.TextViewExt
+                    android:theme="@style/TextView"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbltitle"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/margin_default" />
+
+                <com.farrusco.projectclasses.widget.EditTextExt
+                    android:id="@+id/txtTitle"
+                    android:theme="@style/Project.EditTextStyle.Ultra"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0sp"
+                    android:layout_marginStart="@dimen/margin_default" />
+            </TableRow>
+            <TableRow android:layout_width="match_parent" >
+
+                <com.farrusco.projectclasses.widget.TextViewExt
+                    android:theme="@style/TextView"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbldescription"
+                    android:labelFor="@id/txtDescription"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/margin_default" />
+
+                <com.farrusco.projectclasses.widget.EditTextExt
+                    android:id="@+id/txtDescription"
+                    android:theme="@style/Project.EditTextStyle.Ultra"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0sp"
+                    android:layout_marginStart="@dimen/margin_default" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:layout_marginStart="@dimen/margin_default"
+            android:layout_marginEnd="@dimen/margin_default" >
+
+            <TableRow
+                android:layout_width="match_parent" >
+
+                <com.farrusco.projectclasses.widget.SwitchExt
+                    android:theme="@style/EditText"
+                    android:id="@+id/swRecursive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/normal_48sp"
+                    android:text="@string/lblrecursive"
+                    android:layout_span="3"/>
+            </TableRow>
+            <TableRow android:layout_width="match_parent" >
+
+                <com.farrusco.projectclasses.widget.TextViewExt
+                    android:theme="@style/TextView"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/lbldir"
+                    android:layout_gravity="top"
+                    android:layout_marginEnd="@dimen/margin_default"  />
+
+                <com.farrusco.projectclasses.widget.TextViewExt
+                    android:id="@+id/txtLocation"
+                    android:theme="@style/Project.TextViewStyle"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0sp"
+                    android:layout_gravity="top"
+                    android:layout_marginEnd="@dimen/margin_default"
+                    android:lines="5"
+                    android:tag="@string/ignore"
+                    app:color="@color/white"
+                    app:colorChange="false"/>
+
+                <com.farrusco.projectclasses.widget.ButtonExt
+                    android:id="@+id/btnDir"
+                    android:theme="@style/Project.ButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/normal_48sp"
+                    android:layout_marginStart="@dimen/margin_default"
+                    android:gravity="center"
+                    android:text="@string/select" />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

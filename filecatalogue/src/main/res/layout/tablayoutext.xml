@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <com.farrusco.projectclasses.widget.tablayout.TabLayoutExt
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_48sp"
+        android:clipToPadding="false"
+        android:paddingLeft="@dimen/normal_4sp"
+        android:paddingRight="@dimen/normal_4sp"
+        android:layout_gravity="center"
+        app:xtlDefaultTabTextSize="@dimen/font_size_textview"
+        app:xtlDefaultTabTextColor="@color/white"
+        app:xtlDefaultTabTextHorizontalPadding="@dimen/normal_18sp"
+        app:xtlDividerColor="@color/transparent"
+        app:xtlDividerThickness="0dp"
+        app:xtlIndicatorColor="@color/Blue"
+        app:xtlIndicatorCornerRadius="@dimen/normal_18sp"
+        app:xtlIndicatorInterpolation="smart"
+        app:xtlIndicatorThickness="@dimen/normal_35sp"
+        app:xtlUnderlineColor="@color/transparent"
+        app:xtlUnderlineThickness="0dp"
+        app:xtlDefaultTabTextAllCaps="false"
+        app:xtlIndicatorGravity="center"
+        app:xtlIndicatorAlwaysInCenter="true"/>

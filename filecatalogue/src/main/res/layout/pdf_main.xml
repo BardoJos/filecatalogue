@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        android:id="@+id/viewMain"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/wallpaper"
+        android:orientation="vertical"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+    <Button
+        android:id="@+id/open_pdf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open pdf"
+        android:theme="@style/Project.ButtonStyle"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="#ffffff"  />
+
+</LinearLayout>

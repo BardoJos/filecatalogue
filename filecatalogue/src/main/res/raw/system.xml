@@ -1,0 +1,78 @@
+<sql>
+    <statement>
+        DROP TABLE IF EXISTS pos_systeem
+    </statement>
+    <statement>
+        CREATE TABLE IF NOT EXISTS pos_systeem (
+        _id 		   INTEGER PRIMARY KEY NOT NULL  UNIQUE,
+        _mainid        INTEGER DEFAULT 0,
+        systeemkey     INTEGER DEFAULT 0,
+        systeemvalue   VARCHAR(100) DEFAULT '',
+        description    VARCHAR(100) DEFAULT '',
+        seqno    	   INTEGER DEFAULT 0,
+        inputtype 	   INTEGER DEFAULT 0,
+        recordtype 	   INTEGER DEFAULT 0)
+    </statement>
+    <statement>
+        CREATE INDEX "pos_systeem_idx" ON "pos_systeem" ("systeemkey" ASC)
+    </statement>
+
+    <statement>insert into pos_systeem (_id, systeemkey, description, seqno) values( 100, 1, 'super',       0)</statement>
+    <statement>insert into pos_systeem (_id, _mainid, systeemkey, description, systeemvalue, recordtype, seqno, inputtype) values( 1, 100,  1, 'version', '20', 5, 1, 1)</statement>
+    <statement>insert into pos_systeem (_id, _mainid, systeemkey, description, systeemvalue, recordtype, seqno, inputtype) values( 5, 100,  5, 'about', '1', 5, 2, 1)</statement>
+    <statement>insert into pos_systeem (_id, _mainid, systeemkey, description, systeemvalue, recordtype, seqno, inputtype) values( 4, 100,  4, 'cvs-name', 'files.csv', 5, 3, 1)</statement>
+    <statement>insert into pos_systeem (_id, _mainid, systeemkey, description, systeemvalue, recordtype, seqno, inputtype) values(14, 100, 14, 'last path', '', 5, 4, 1)</statement>
+    <statement>insert into pos_systeem (_id, _mainid, systeemkey, description, systeemvalue, recordtype, seqno, inputtype) values(24, 100, 24, 'Registration', '', 5, 4, 1)</statement>
+
+    <statement>insert into pos_systeem (_id, systeemkey, description, seqno) values( 101, 2, 'system', 1)</statement>
+    <statement>insert into pos_systeem (_id, _mainid, systeemkey, description, systeemvalue, recordtype, seqno, inputtype) values( 6, 101,  6, 'help enabled', '-1', 3, 1, 2)</statement>
+    <statement>insert into pos_systeem (_id, _mainid, systeemkey, description, systeemvalue, recordtype, seqno, inputtype) values( 7, 101,  7, 'tooltip enabled', '-1', 3, 2, 2)</statement>
+    <statement>insert into pos_systeem (_id, _mainid, systeemkey, description, systeemvalue, recordtype, seqno, inputtype) values(26, 101, 26, 'auto refresh all folders', '0', 3, 3, 2)</statement>
+    <statement>insert into pos_systeem (_id, _mainid, systeemkey, description, systeemvalue, recordtype, seqno, inputtype) values(12, 101, 12, 'reorganize database', '-1', 3, 4, 2)</statement>
+    <statement>insert into pos_systeem (_id, _mainid, systeemkey, description, systeemvalue, recordtype, seqno, inputtype) values(20, 101, 20, 'reorganize delete not existing file(s)', '-1', 3, 5, 2)</statement>
+    <statement>insert into pos_systeem (_id, _mainid, systeemkey, description, systeemvalue, recordtype, seqno, inputtype) values(27, 101, 27, 'scan image', '-1', 3, 6, 2)</statement>
+    <statement>insert into pos_systeem (_id, _mainid, systeemkey, description, systeemvalue, recordtype, seqno, inputtype) values(28, 101, 28, 'translate text', '-1', 3, 7, 2)</statement>
+    <statement>insert into pos_systeem (_id, _mainid, systeemkey, description, systeemvalue, recordtype, seqno, inputtype) values(29, 101, 29, 'scan qr/bar-code', '-1', 3, 8, 2)</statement>
+    <statement>insert into pos_systeem (_id, _mainid, systeemkey, description, systeemvalue, recordtype, seqno, inputtype) values(10, 101, 10, 'GBWhatApp enabled', '-1', 3, 9, 2)</statement>
+    <statement>insert into pos_systeem (_id, _mainid, systeemkey, description, systeemvalue, recordtype, seqno, inputtype) values(21, 101, 21, 'backups', '10', 3, 10, 3)</statement>
+    <statement>insert into pos_systeem (_id, _mainid, systeemkey, description, systeemvalue, recordtype, seqno, inputtype) values( 2, 101,  2, 'backup folder', '', 3, 11, 5)</statement>
+
+    <statement>insert into pos_systeem (_id, systeemkey, description, seqno) values( 102, 3, 'category',    2)</statement>
+    <statement>insert into pos_systeem (_id, _mainid, systeemkey, description, systeemvalue, recordtype, seqno, inputtype) values( 3, 102,  3, 'fileextension', '-1', 3, 1, 2)</statement>
+    <statement>insert into pos_systeem (_id, _mainid, systeemkey, description, systeemvalue, recordtype, seqno, inputtype) values(23, 102, 23, 'smart copy category', '-1', 3, 2, 2)</statement>
+
+    <statement>insert into pos_systeem (_id, systeemkey, description, seqno) values( 103, 4, 'search', 3)</statement>
+    <statement>insert into pos_systeem (_id, _mainid, systeemkey, description, systeemvalue, recordtype, seqno, inputtype) values(18, 103, 18, 'save last file query', '-1', 3, 1, 2)</statement>
+    <statement>insert into pos_systeem (_id, _mainid, systeemkey, description, systeemvalue, recordtype, seqno, inputtype) values(31, 103, 31, 'search files', '-1', 3, 2, 2)</statement>
+    <statement>insert into pos_systeem (_id, _mainid, systeemkey, description, systeemvalue, recordtype, seqno, inputtype) values(32, 103, 32, 'search hidden files', '-1', 3, 3, 2)</statement>
+    <statement>insert into pos_systeem (_id, _mainid, systeemkey, description, systeemvalue, recordtype, seqno, inputtype) values(13, 103, 13, 'list files horizontal', '4', 3, 4, 3)</statement>
+    <statement>insert into pos_systeem (_id, _mainid, systeemkey, description, systeemvalue, recordtype, seqno, inputtype) values(25, 103, 25, 'no query stored', '4', 3, 5, 3)</statement>
+    <statement>insert into pos_systeem (_id, _mainid, systeemkey, description, systeemvalue, recordtype, seqno, inputtype) values(37, 103, 37, 'order seqno directory', '51', 3, 6, 3)</statement>
+    <statement>insert into pos_systeem (_id, _mainid, systeemkey, description, systeemvalue, recordtype, seqno, inputtype) values(38, 103, 38, 'order seqno creation', '52', 3, 7, 3)</statement>
+    <statement>insert into pos_systeem (_id, _mainid, systeemkey, description, systeemvalue, recordtype, seqno, inputtype) values(39, 103, 39, 'order seqno extension', '53', 3, 8, 3)</statement>
+    <statement>insert into pos_systeem (_id, _mainid, systeemkey, description, systeemvalue, recordtype, seqno, inputtype) values(40, 103, 40, 'order seqno gps', '54', 3, 9, 3)</statement>
+    <statement>insert into pos_systeem (_id, _mainid, systeemkey, description, systeemvalue, recordtype, seqno, inputtype) values(42, 103, 42, 'order face', '55', 3, 10, 3)</statement>
+
+    <statement>insert into pos_systeem (_id, systeemkey, description, seqno) values( 106, 5, 'list files', 4)</statement>
+    <statement>insert into pos_systeem (_id, _mainid, systeemkey, description, systeemvalue, recordtype, seqno, inputtype) values(30, 106, 30, 'single list label', '-1', 3, 30, 2)</statement>
+    <statement>insert into pos_systeem (_id, _mainid, systeemkey, description, systeemvalue, recordtype, seqno, inputtype) values(33, 106, 33, 'sort creation year ascending', '-1', 3, 33, 2)</statement>
+    <statement>insert into pos_systeem (_id, _mainid, systeemkey, description, systeemvalue, recordtype, seqno, inputtype) values(34, 106, 34, 'sort creation month ascending', '-1', 3, 34, 2)</statement>
+
+    <statement>insert into pos_systeem (_id, systeemkey, description, seqno) values( 104, 6, 'file', 5)</statement>
+    <statement>insert into pos_systeem (_id, _mainid, systeemkey, description, systeemvalue, recordtype, seqno, inputtype) values(41, 104, 41, 'fancy scroll', '-1', 3, 1, 2)</statement>
+    <statement>insert into pos_systeem (_id, _mainid, systeemkey, description, systeemvalue, recordtype, seqno, inputtype) values(22, 104, 22, 'delete file phone', '-1', 3, 2, 2)</statement>
+    <statement>insert into pos_systeem (_id, _mainid, systeemkey, description, systeemvalue, recordtype, seqno, inputtype) values( 9, 104,  9, 'price enabled', '-1', 3, 3, 2)</statement>
+    <statement>insert into pos_systeem (_id, _mainid, systeemkey, description, systeemvalue, recordtype, seqno, inputtype) values(11, 104, 11, 'automatic category NEW enabled', '-1', 3, 4, 2)</statement>
+    <statement>insert into pos_systeem (_id, _mainid, systeemkey, description, systeemvalue, recordtype, seqno, inputtype) values(19, 104, 19, 'GPS information', '-1', 3, 5, 2)</statement>
+    <statement>insert into pos_systeem (_id, _mainid, systeemkey, description, systeemvalue, recordtype, seqno, inputtype) values(35, 104, 35, 'Store file size', '-1', 3, 6, 2)</statement>
+    <statement>insert into pos_systeem (_id, _mainid, systeemkey, description, systeemvalue, recordtype, seqno, inputtype) values(36, 104, 36, 'Show file size MB', '-1', 3, 7, 2)</statement>
+    <statement>insert into pos_systeem (_id, _mainid, systeemkey, description, systeemvalue, recordtype, seqno, inputtype) values(43, 104, 43, 'face recognition', '-1', 3, 8, 2)</statement>
+    <statement>insert into pos_systeem (_id, _mainid, systeemkey, description, systeemvalue, recordtype, seqno, inputtype) values(44, 104, 44, 'face distance', '1.0', 3, 9, 6)</statement>
+
+    <statement>insert into pos_systeem (_id, systeemkey, description, seqno) values( 105, 7, 'order', 6)</statement>
+    <statement>insert into pos_systeem (_id, _mainid, systeemkey, description, systeemvalue, recordtype, seqno, inputtype) values( 8, 105,  8, 'orders enabled', '-1', 3, 5, 2)</statement>
+    <statement>insert into pos_systeem (_id, _mainid, systeemkey, description, systeemvalue, recordtype, seqno, inputtype) values(16, 105, 16, 'sales name', '-', 3, 8, 4)</statement>
+    <statement>insert into pos_systeem (_id, _mainid, systeemkey, description, systeemvalue, recordtype, seqno, inputtype) values(17, 105, 17, 'sales address', '-', 3, 9, 4)</statement>
+    <statement>insert into pos_systeem (_id, _mainid, systeemkey, description, systeemvalue, recordtype, seqno, inputtype) values(15, 105, 15, 'sales EMail', '-', 3, 10, 4)</statement>
+
+</sql>

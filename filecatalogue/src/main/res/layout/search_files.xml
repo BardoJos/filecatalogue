@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewMain"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar_main"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.farrusco.projectclasses.widget.ButtonExt
+        android:id="@+id/btnSearch"
+        android:theme="@style/Project.ButtonStyle"
+        android:layout_width="@dimen/normal_240sp"
+        android:layout_height="@dimen/normal_40sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/margin_default"
+        android:background="@drawable/button_search"
+        android:scaleType="centerInside"
+        android:contentDescription="@string/tip005_find"/>
+
+    <include layout="@layout/line_separator_2sp"/>
+
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_default"
+        android:layout_marginEnd="@dimen/margin_default"
+        android:stretchColumns="1">
+        <TableRow
+            android:id="@+id/tblRow"
+            tools:ignore="UselessParent">
+            <com.farrusco.projectclasses.widget.TextViewExt
+                android:id="@+id/txtOrderBy"
+                android:theme="@style/TextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/margin_default"
+                android:lines="1"
+                android:text="@string/sort"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"/>
+            <com.farrusco.projectclasses.widget.SpinnerExt
+                android:id="@+id/spOrderBy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawSelectorOnTop="true"
+                android:layout_span="3"
+                style="@style/SpinnerStyle" />
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_default"
+        android:layout_marginEnd="@dimen/margin_default"
+        android:stretchColumns="0">
+        <TableRow>
+            <com.farrusco.projectclasses.widget.TextViewExt
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextView"
+                android:layout_margin="@dimen/margin_default"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:text="@string/noofcolumns" />
+
+            <com.farrusco.projectclasses.widget.EditTextExt
+                android:id="@+id/txtCols"
+                android:layout_width="@dimen/normal_40sp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_default"
+                android:background="@drawable/edittext_gradient"
+                android:gravity="center_vertical"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:theme="@style/EditText"
+                android:maxLength="2"
+                tools:ignore="HardcodedText" />
+
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_default"
+        android:layout_marginEnd="@dimen/margin_default"
+        android:stretchColumns="1" >
+
+        <TableRow tools:ignore="UselessParent">
+
+            <com.farrusco.projectclasses.widget.SpinnerExt
+                android:id="@+id/spSearch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Wildcard"
+                android:textColor="@color/black"
+                android:layout_marginEnd="@dimen/margin_default"
+                style="@style/SpinnerStyle"
+                tools:ignore="HardcodedText" />
+
+            <com.farrusco.projectclasses.widget.EditTextExt
+                android:id="@+id/txtWildCard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:lines="1"
+                android:gravity="center_vertical"
+                android:theme="@style/EditText"
+                android:textColor="@color/black"
+                android:background="@drawable/edittext_gradient"
+                android:text="*"
+                tools:ignore="HardcodedText" />
+
+        </TableRow>
+    </TableLayout>
+
+    <include layout="@layout/line_separator_2sp"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/black"
+        android:fillViewport="true"
+        tools:ignore="ScrollViewCount">
+
+        <TableLayout
+            android:id="@+id/tblLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_default"
+            android:layout_marginEnd="@dimen/margin_default" >
+
+            <include layout="@layout/line_btn_text"/>
+
+        </TableLayout>
+
+    </ScrollView>
+
+</LinearLayout>

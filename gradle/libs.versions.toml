@@ -1,0 +1,88 @@
+[versions]
+androidDatabaseSqlcipher = "4.5.4"
+appcompatVersion = "1.6.1"
+barcodeScanning = "17.2.0"
+camera = "16.0.0-beta3"
+cameraCore = "1.2.0-alpha04"
+constraintlayout = "2.1.4"
+coreKtxVersion = "1.13.1"
+drawerlayout = "1.2.0"
+exifinterface = "1.3.7"
+faceDetection = "16.1.5"
+firebaseCore = "21.1.1"
+firebaseCrashlyticsBuildtools = "3.0.3"
+firebaseMlModelInterpreter = "22.0.4"
+glide = "4.12.0"
+gradle = "7.4.2"
+gson = "2.8.9"
+guava = "30.1-jre"
+koin = "3.5.6"
+koinAnnotations = "1.3.1"
+kotlinGradlePlugin = "1.9.24"
+kotlinStdlib = "1.9.24"
+leakcanaryAndroid = "2.14"
+lifecycleRuntimeKtxVersion = "2.6.2"
+material = "1.12.0"
+multidex = "2.0.1"
+playServicesAds = "23.1.0"
+playServicesMlkitFaceDetection = "17.0.1"
+proguardGradle = "7.7.0"
+realmGradlePlugin = "10.17.0"
+sqliteKtx = "2.4.0"
+tasksVision = "0.10.14"
+tensorflow-lite = "2.14.0"
+textRecognition = "16.0.0"
+translate = "17.0.2"
+viewpager2 = "1.0.0"
+window = "1.1.0-alpha04"
+
+[libraries]
+android-database-sqlcipher = { module = "net.zetetic:android-database-sqlcipher", version.ref = "androidDatabaseSqlcipher" }
+androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompatVersion" }
+androidx-camera-camera2 = { module = "androidx.camera:camera-camera2", version.ref = "cameraCore" }
+androidx-camera-core = { module = "androidx.camera:camera-core", version.ref = "cameraCore" }
+androidx-camera-lifecycle = { module = "androidx.camera:camera-lifecycle", version.ref = "cameraCore" }
+androidx-camera-view = { module = "androidx.camera:camera-view", version.ref = "cameraCore" }
+androidx-constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayout" }
+androidx-core-ktx-v1131 = { module = "androidx.core:core-ktx", version.ref = "coreKtxVersion" }
+androidx-drawerlayout = { module = "androidx.drawerlayout:drawerlayout", version.ref = "drawerlayout" }
+androidx-exifinterface = { module = "androidx.exifinterface:exifinterface", version.ref = "exifinterface" }
+androidx-lifecycle-runtime-ktx-v262 = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtxVersion" }
+androidx-multidex = { module = "androidx.multidex:multidex", version.ref = "multidex" }
+androidx-sqlite-ktx = { module = "androidx.sqlite:sqlite-ktx", version.ref = "sqliteKtx" }
+androidx-viewpager2 = { module = "androidx.viewpager2:viewpager2", version.ref = "viewpager2" }
+androidx-window = { module = "androidx.window:window", version.ref = "window" }
+barcode-scanning = { module = "com.google.mlkit:barcode-scanning", version.ref = "barcodeScanning" }
+camera = { module = "com.google.mlkit:camera", version.ref = "camera" }
+face-detection = { module = "com.google.mlkit:face-detection", version.ref = "faceDetection" }
+firebase-core = { module = "com.google.firebase:firebase-core", version.ref = "firebaseCore" }
+firebase-crashlytics-buildtools = { module = "com.google.firebase:firebase-crashlytics-buildtools", version.ref = "firebaseCrashlyticsBuildtools" }
+firebase-ml-model-interpreter = { module = "com.google.firebase:firebase-ml-model-interpreter", version.ref = "firebaseMlModelInterpreter" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+gradle = { module = "com.android.tools.build:gradle", version.ref = "gradle" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+guava = { module = "com.google.guava:guava", version.ref = "guava" }
+kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlinGradlePlugin" }
+kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlinStdlib" }
+leakcanary-android = { module = "com.squareup.leakcanary:leakcanary-android", version.ref = "leakcanaryAndroid" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+play-services-ads = { module = "com.google.android.gms:play-services-ads", version.ref = "playServicesAds" }
+play-services-mlkit-face-detection = { module = "com.google.android.gms:play-services-mlkit-face-detection", version.ref = "playServicesMlkitFaceDetection" }
+proguard-gradle = { module = "com.guardsquare:proguard-gradle", version.ref = "proguardGradle" }
+realm-gradle-plugin = { module = "io.realm:realm-gradle-plugin", version.ref = "realmGradlePlugin" }
+text-recognition = { module = "com.google.mlkit:text-recognition", version.ref = "textRecognition" }
+translate = { module = "com.google.mlkit:translate", version.ref = "translate" }
+
+# TensorFlow Lite
+tasks-vision = { module = "com.google.mediapipe:tasks-vision", version.ref = "tasksVision" }
+tensorflow-lite = { module = "org.tensorflow:tensorflow-lite", version.ref = "tensorflow-lite" }
+
+# Koin - dependency injection
+koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
+koin-androidx-compose = { module = "io.insert-koin:koin-androidx-compose", version.ref = "koin" }
+koin-annotations = { module = "io.insert-koin:koin-annotations", version.ref = "koinAnnotations" }
+# koin-ksp-compiler = { module = "io.insert-koin:koin-ksp-compiler", version.ref = "koinAnnotations" }
+
+[plugins]
+
+

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+	<string name="noFilemanagerInstalled">Geen bestandenmanager aanwezig</string>
+
+	<string name="incoming_message_notify_text">Toon meldingen</string>
+	<string name="incoming_message_view_message_text">this is the text of a previous message.</string>
+	<string name="imcoming_message_view_message2_text">Did you notice that the status bar icon disappeared?</string>
+	<string name="imcoming_message_ticker_text">Nieuwe boodschap: <xliff:g id="text">%0$s</xliff:g></string>
+
+	<!-- License checking status messages -->
+
+	<string name="mess001_inuse">Dit is ingebruik en kan niet worden verwijderd.</string>
+	<string name="mess002_saved">Gegevens zijn bewaard</string>
+	<string name="mess003_notnull">%0% moet ingevuld zijn.</string>
+	<string name="mess004_deleteyn">Weet u zeker dat verwijderd moet worden?</string>
+	<string name="mess005_nocreatefolder">Folder kan niet worden gemaakt.</string>
+	<string name="mess006_listready">Print is gereed, kijk in:</string>
+	<string name="mess007_listerr">Print fout</string>
+	<string name="mess008_nodata">Geen gegevens gevonden</string>
+	<string name="mess009_noselection">Geen selectie gemaakt</string>
+	<string name="mess010_fileimported">Bestand is geimporteerd.</string>
+	<string name="mess011_exportcomplete">Export database compleet.</string>
+	<string name="mess012_articleinuse">Dit artikel is ingebruik en kan niet worden verwijderd.</string>
+	<string name="mess013_novalidfile">Geen geldige bestand</string>
+	<string name="mess014_totaladded">Totaal toegevoegd:</string>
+	<string name="mess015_alreadyadded">Reeds toegevoegd</string>
+	<string name="mess016_selectfolder">Selecteer een folder</string>
+	<string name="mess017_lowmemory">Te weinig geheugen</string>
+	<string name="mess018_listready">Print is gereed, kijk in:</string>
+	<string name="mess019_errexport">Exportfout</string>
+	<string name="mess020_imexportequals">Formaat import en export zijn gelijk.
+		\nkode,titel,prijs,omschrijving
+		\n\"aaaaa\",\"bbbbb\",1.23,\"ccccc\"
+		</string>
+	<string name="mess022_reorgdb_ready">Reorganisatie is gereed</string>
+	<string name="mess023_reorgdb_not_ready">Reorganisatie database is niet nodig</string>
+	<string name="mess024_No_products">Geen produkten</string>
+	<string name="mess025_Error">Fout:</string>
+	<string name="mess026_one_moment">Ogenblik aub…</string>
+	<string name="mess027_please_wait">Even wachten tijdens het laden…</string>
+	<string name="mess028_show_orderlines">Tonen orderregels</string>
+	<string name="mess029_seqno_backup">Backup volgnr</string>
+	<string name="mess030_seqno_restore">Restore volgnr</string>
+	<string name="mess031_password_not_equal">Wachtwoorden zijn niet gelijk aan elkaar</string>
+	<string name="mess032_notsaved">Gegevens zijn niet bewaard.</string>
+	<string name="mess033_validateerror">Validatie fout</string>
+	<string name="mess034_DoYouWantToSave">Wilt u de gegevens bewaren?</string>
+	<string name="mess039_notnull">Veld(en) mogen niet leeg zijn.</string>
+	<string name="mess040_recordinuse">\'<xliff:g id="text">%0$s</xliff:g>\' is in gebruik.</string>
+	<string name="mess041_rangeerror">Grens fout.</string>
+	<string name="mess041_maxvalue">Maximum waarde overschreden</string>
+	<string name="mess042_exception">Fout: <xliff:g id="text">%0$s</xliff:g></string>
+	<string name="mess043_notnumeric">Waarde is niet numeriek</string>
+	<string name="mess044_typequestioncodeerror">Waarde grens fout [1&#8211;4]</string>
+	<string name="mess045_typecalculationcodeerror">Waarde grens fout [1&#8211;2]</string>
+	<string name="mess046_RefreshReady">Verversen is uitgevoerd</string>
+	<string name="mess047_please_wait">Bewaren van gegevens. Een ogenblik…</string>
+	<string name="mess048_mail_error">Toegang moet worden verleend om contacten te kunnen tonen</string>
+	<string name="mess049_external_read_error">Kontroleer of u leesrechten heeft.</string>
+	<string name="mess050_external_write_error">Kontroleer of u schrijfrechten heeft.</string>
+	<string name="mess051_no_files">Geen bestanden in de database.</string>
+	<string name="mess052_fatal_db_error">Fatale database fout; database wordt opnieuw gevuld</string>
+	<string name="mess053_no_connection">Geen verbinding</string>
+	<string name="mess054_totalUpdated">Totaal aangepast: %0%</string>
+	<string name="mess055_presslong4menu">Lang drukken voor menu</string>
+	<string name="mess056_overlapfolder">Folder overlapt een andere folder</string>
+	<string name="mess057_notif">Tif is niet toegestaan</string>
+	<string name="mess057_presslong4menu">Lang drukken voor menu. Gevonden (%0%)</string>
+	<string name="mess058_demo">Demo kan niet meer als %0% bestanden opslaan/tonen</string>
+	<string name="mess059_rangeerror">Opgegeven index is fout</string>
+	<string name="mess060_copydone">Kopie gereed</string>
+	<string name="mess061_noupdate">Geen wijzigen gedaan</string>
+	<string name="mess062_noaccess_file">Geen rechten voor bestand</string>
+	<string name="mess063_presslong4menuorright">Lang drukken of rechter knop voor menu</string>
+	<string name="mess064_pressrightbutton4menu">Rechter knop for menu</string>
+	<string name="mess065_external_read_error">Kontroleer of u leesrechten heeft voor fotos.</string>
+	<string name="mess066_savefirst">Bewaar eerst de gegevens</string>
+	<string name="mess067_taskStart">Taak gestart.</string>
+	<string name="mess068_taskStop">Taak beeindigd.</string>
+	<string name="mess069_duplapp">Programma was al actief.</string>
+	<string name="mess070_notranslation">Vertaal fout.</string>
+	<string name="mess071_canceltranslation">Vertaal afgebroken.</string>
+	<string name="mess072_all_txt_copy_to_clipboard">Tekst naar geheugen gekopieerd</string>
+	<string name="mess073_clearyn">Weet u zeker dat leeg gemaakt moet worden?</string>
+	<string name="mess074_noface">Geen gezicht gevonden</string>
+	<string name="mess075_multiplefaces">Te veel gezichten</string>
+
+	<string name="tip001_save">Gegevens worden bewaard.</string>
+	<string name="tip002_detaillines">Tonen details.</string>
+	<string name="tip003_delete">Verwijderen gegevens.</string>
+	<string name="tip004_print">Print gegevens.</string>
+	<string name="tip005_find">Zoeken naar gegevens.</string>
+	<string name="tip006_category">Category</string>
+	<string name="tip007_filldb">Vullen database</string>
+	<string name="tip008_new">Toevoegen gegevens</string>
+	<string name="tip009_search">Tonen gegevens</string>
+	<string name="tip010_mail">Verzenden via E-Mail</string>
+	<string name="tip011_tcpip">Verzenden via tcpip protocol</string>
+	<string name="tip012_blocked">Tonen geblokkeerde bestanden</string>
+
+</resources>

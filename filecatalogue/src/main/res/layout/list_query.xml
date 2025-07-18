@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/viewMain"
+        android:background="@color/black"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:fillViewport="true">
+
+        <include
+            layout="@layout/toolbar_main"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/normal_6sp"
+            android:layout_marginStart="@dimen/margin_default"
+            android:layout_marginEnd="@dimen/margin_default"
+            android:stretchColumns="1" >
+
+            <TableRow tools:ignore="UselessParent">
+                <com.farrusco.projectclasses.widget.TextViewExt
+                    android:theme="@style/TextView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_default"
+                    android:layout_marginEnd="@dimen/margin_default"
+                    android:gravity="start"
+                    android:labelFor="@+id/colSeqno"
+                    android:text="@string/lblseqno" />
+
+                <com.farrusco.projectclasses.widget.TextViewExt
+                    android:theme="@style/TextView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_default"
+                    android:layout_marginEnd="@dimen/margin_default"
+                    android:labelFor="@+id/colTitle"
+                    android:gravity="center"
+                    android:text="@string/lbldescription" />
+            </TableRow>
+        </TableLayout>
+
+        <include layout="@layout/line_separator_2sp"/>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/black"
+            android:fillViewport="true">
+
+        <TableLayout
+            android:id="@+id/tblLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1" >
+            <include
+                layout="@layout/seqno_text" />
+        </TableLayout>
+
+        </ScrollView>
+
+    </LinearLayout>

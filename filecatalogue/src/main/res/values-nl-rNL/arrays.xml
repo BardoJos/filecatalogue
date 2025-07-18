@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string-array name="search_files">
+        <item>Kode</item>
+        <item>Korte omschrijving</item>
+        <item>Omschrijving</item>
+    </string-array>
+
+    <string-array name="sort_filesIncl">
+        <item>Creatie jaar/maand aflopend</item>
+        <item>Creatie jaar/maand oplopend</item>
+        <item>Folder/bestandsnaam</item>
+        <item>Kode</item>
+        <item>Datum beschikbaar</item>
+        <item>Grootte aflopend</item>
+        <item>Grootte jaar/maand oplopend</item>
+    </string-array>
+
+    <string-array name="sort_files">
+        <item>Creatie jaar/maand aflopend</item>
+        <item>Creatie jaar/maand oplopend</item>
+        <item>Folder/bestandsnaam</item>
+        <item>Kode</item>
+        <item>Datum beschikbaar</item>
+    </string-array>
+
+</resources>
